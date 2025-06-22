@@ -14,6 +14,9 @@ def subtraction(*args):
 
 
 def multiplication(*args):
-    
-    return
+    result = math.prod(args)
+    return result
+
+
 print(subtraction(1, 2, 3, 4, 5))
+print(multiplication(1, 2, 3, 4, 5))

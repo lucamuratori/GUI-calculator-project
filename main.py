@@ -1,22 +1,52 @@
 import math
 
-def addition(*args):
-    x = sum(args)
-    return x
-
-
-def subtraction(*args):
-    args = list(args)
-    result = args.pop(0)
-    while args != []:
-        result -= args.pop(0)
+def addition(a: float, b: float):
+    result = a + b
     return result
 
 
-def multiplication(*args):
-    result = math.prod(args)
+def subtraction(a: float, b: float):
+    result = a - b
     return result
 
 
-print(subtraction(1, 2, 3, 4, 5))
-print(multiplication(1, 2, 3, 4, 5))
+def multiplication(a: float, b: float):
+    result = a * b
+    return result
+
+
+def division(a: float, b: float):
+    result = a / b
+    return result
+
+
+def squareRoot(a: float):
+    return math.sqrt(a)
+
+
+def power(a: float, b: float):
+    return math.pow(a, b)
+
+
+def fact(a: int):
+    return math.factorial(a)
+
+
+def sine(a: float):
+    return math.sin(a)
+
+
+def cosine(a: float):
+    return math.cos(a)
+
+
+def tangent(a: float):
+    return math.tan(a)
+
+
+def logarithm(a: float, b = math.e):
+    return math.log(a, b)
+
+
+def roots(exp: float, base: float):
+    return base ** (1 / exp)
